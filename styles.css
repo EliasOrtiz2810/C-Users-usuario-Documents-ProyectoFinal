@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+    --negro: #1c2833;
+    --rojo: #7F2310;
+    --degradado:linear-gradient(90deg, var(--rojo),var(--negro));
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--rojo);
+    color:beige;
+}
+html{
+    font-size: 62.4%;
+    overflow: hidden;
+}
+body{
+    background: whitesmoke;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5.rem 1rem rgba(0, 0, 0, 1);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo{
+    font-size: 2rem;
+    color: var(--negro);
+}
+header .logo span{
+    color: var(--rojo);
+}
+header .navbar a{
+    font-size: 1.8rem;
+    margin-left: 2rem;
+    color: var(--negro);
+}
+header .navbar a:hover{
+    color: var(--rojo);
+}
+body{
+    background: whitesmoke;
+    background-image: url(/img/material-oficina-taza-cafe-auriculares-teclado-escritorio-blanco.jpg);
+    background-size: cover;
+}
